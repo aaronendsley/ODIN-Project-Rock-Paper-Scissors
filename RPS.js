@@ -100,6 +100,15 @@ function playRound(){
 
 }
 
+function playGame(){
+    for(let i=0; i<=5; i++){
+        playRound();
+        if(i >= 5){
+            console.log(`Round Score: Computer ${computerScore}, You ${humanScore}`)
+        }
+    }
+}
+
 let humanScore = 0;
 let computerScore = 0;
 
