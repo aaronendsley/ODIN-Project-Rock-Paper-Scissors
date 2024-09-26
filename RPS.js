@@ -2,7 +2,6 @@
 function getComputerChoice(){
     // Get a random number 1 and 3 
     let compChoice = Math.floor(Math.random() * 3) + 1;
-    console.log(compChoice);
         // If the computer chooses 1 return "rock"
         if(compChoice === 1){
             return 'rock'
@@ -98,7 +97,7 @@ let computerScore = 0;
         }
     
     }
-    
+
     for(let i=0; i<=5; i++){
         playRound();
         if(i >= 5){
