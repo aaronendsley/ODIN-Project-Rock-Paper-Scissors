@@ -108,6 +108,8 @@ let computerScore = 0;
 
 }
 
+playGame();
+
 
 
 
