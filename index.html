@@ -4,19 +4,56 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rock, Paper, Scissors</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-    </body>
-    <script src="RPS.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock, Paper, Scissors</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="RPS.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <h1>Rock - Paper - Scissors</h1>
+    </header>
+    <section id="choice">
+      <h2>What Will You Choose? Rock, Paper, or Scissors?</h2>
+      <div>
+        <button id="rock" type="button" aria-label="rock">🪨</button>
+        <button id="paper" type="button" aria-label="paper">📄</button>
+        <button id="scissors" type="button" aria-label="scissors">✂️</button>
+      </div>
+    </section>
+    <section id="score">
+      <h2>Score</h2>
+      <div id="score-box">
+        <h3>Player:<span id="player-score"></span></h3>
+        <h3>Computer:<span id="computer-score"></span></h3>
+      </div>
+    </section>
+    <section id="outcome">
+      <h2>Who Won?</h2>
+      <div id="outcome-feedback">
+        <p>Match Not Started</p>
+      </div>
+    </section>
+    <section id="reset">
+      <h2>Reset the Game?</h2>
+      <button id="reset-button" type="button">Reset</button>
+    </section>
+    <footer>&copy; Aaron Endsley</footer>
+  </body>
+  <script src="RPS.js"></script>
 </html>
