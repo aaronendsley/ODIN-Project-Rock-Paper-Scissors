@@ -102,6 +102,12 @@ footer {
   text-align: center;
 }
 
+#outcome-feedback {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 25px;
+}
+
 #reset {
   background-color: var(--teal);
   display: flex;
